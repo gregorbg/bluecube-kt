@@ -1,4 +1,4 @@
-package com.suushiemaniac.cubing.hardware.bluetooth.giiker
+package net.gregorbg.cubing.hardware.bluetooth.giiker
 
 typealias GiikerData = List<Int>
 

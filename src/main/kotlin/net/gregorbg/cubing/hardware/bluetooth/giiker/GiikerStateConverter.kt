@@ -1,9 +1,8 @@
-package com.suushiemaniac.cubing.hardware.bluetooth.giiker
+package net.gregorbg.cubing.hardware.bluetooth.giiker
 
 import kotlin.math.absoluteValue
 import kotlin.math.sign
 
-@ExperimentalUnsignedTypes
 object GiikerStateConverter {
     fun PieceState.giikerToKSolve(type: PieceType, targetMapping: List<Int>): PieceState {
         val rawMapping = targetMapping.map { it.absoluteValue }
@@ -71,7 +70,7 @@ object GiikerStateConverter {
             val typeIndex = types.indexOf(type)
 
             val traversedTypes = types.toList().subList(0, typeIndex)
-            val startIndex = traversedTypes.map(PieceType::numPieces).sum() * 2
+            val startIndex = traversedTypes.sumOf(PieceType::numPieces) * 2
 
             val permutationsRaw = subList(startIndex, startIndex + type.numPieces)
             val orientationsRaw = subList(startIndex + type.numPieces, startIndex + type.numPieces + type.numPieces)

@@ -1,4 +1,4 @@
-package com.suushiemaniac.cubing.hardware.bluetooth.giiker
+package net.gregorbg.cubing.hardware.bluetooth.giiker
 
 enum class PieceType(val numPieces: Int, val orientations: Int) {
     CORNER(8, 3),
