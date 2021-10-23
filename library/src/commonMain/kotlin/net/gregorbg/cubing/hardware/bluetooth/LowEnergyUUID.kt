@@ -1,5 +1,7 @@
 package net.gregorbg.cubing.hardware.bluetooth
 
+import kotlin.jvm.JvmInline
+
 @JvmInline
 value class LowEnergyUUID(val uuid: String) {
     companion object {

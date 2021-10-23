@@ -1,16 +1,6 @@
 package net.gregorbg.cubing.hardware.bluetooth
 
-import org.sputnikdev.bluetooth.URL
-import org.sputnikdev.bluetooth.manager.impl.BluetoothManagerBuilder
-
-import net.gregorbg.cubing.hardware.bluetooth.giiker.GiikerStateConverter.moveHistory
-import net.gregorbg.cubing.hardware.bluetooth.giiker.GiikerStateConverter.toDecodedState
-import net.gregorbg.cubing.hardware.bluetooth.giiker.GiikerStateConverter.toCubeState
-import net.gregorbg.cubing.hardware.bluetooth.giiker.GiikerStateConverter.giikerToKSolve
-import net.gregorbg.cubing.hardware.bluetooth.giiker.PieceType
-import org.sputnikdev.bluetooth.manager.BluetoothManager
-
-object BluetoothManagerDemo {
+object BluetoothManagerDemo {/*
     val GIIKER_191846 = BlueCube(BlueCubeModel.GIIKER, "C7:79:A8:5E:F6:B1")
     val GIIKER_111821 = BlueCube(BlueCubeModel.GIIKER, "F1:C9:BC:52:01:4C")
 
@@ -23,7 +13,6 @@ object BluetoothManagerDemo {
             .build()
     }
 
-    @JvmStatic
     fun main(args: Array<String>) {
         attachBlueCubeListeners(WEILONG_AI_0100100000000E5F)
     }
@@ -74,4 +63,4 @@ object BluetoothManagerDemo {
 
         start(true)
     }
-}
+*/}
